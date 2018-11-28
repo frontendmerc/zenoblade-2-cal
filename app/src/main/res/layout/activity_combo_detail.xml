@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComboDetailActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/combo_detail_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/minMaxHeight"
+            android:maxWidth="@dimen/minMaxHeight"
+            android:minHeight="@dimen/minMaxHeight"
+            android:minWidth="@dimen/minMaxHeight"
+            android:src="@drawable/element_unknown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" -> "
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/combo_detail_image2"
+            android:src="@drawable/element_unknown"
+            android:maxHeight="@dimen/minMaxHeight"
+            android:maxWidth="@dimen/minMaxHeight"
+            android:minHeight="@dimen/minMaxHeight"
+            android:minWidth="@dimen/minMaxHeight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" -> "
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/combo_detail_image3"
+            android:src="@drawable/element_unknown"
+            android:maxHeight="@dimen/minMaxHeight"
+            android:maxWidth="@dimen/minMaxHeight"
+            android:minHeight="@dimen/minMaxHeight"
+            android:minWidth="@dimen/minMaxHeight"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/titleGap"
+            android:text="Element Required"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/elements"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

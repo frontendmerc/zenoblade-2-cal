@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="minMaxHeight">50dp</dimen>
+    <dimen name="textSize">30dp</dimen>
+    <dimen name="titleGap">10dp</dimen>
+    <dimen name="minMaxWidth">10dp</dimen>
+    <dimen name="minMaxHeight2">20dp</dimen>
+</resources>
